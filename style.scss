@@ -63,13 +63,17 @@ ul, li {
     
 
 main {
-    background-color: #EAE6E7;
+    background-color: #6497b1;
     padding: 20px;
     grid-area: main;
 
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr 300px;
     gap: 40px;
+
+    h1 {
+        color: #EAE6E7;
+    }
 }
 
 main .projects {
@@ -81,6 +85,7 @@ main .projects {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
         .card {
+            background-color: #EAE6E7;
             height: 200px;
             padding: 30px;
             border: 1px solid black;
@@ -105,6 +110,42 @@ main .projects {
    
 }
 
-main .announcements {
+main .lateral {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 40px;
+    
+    font-size: 0.8rem;
+
+    .announcements {
+        margin-top: 20px;
+        background-color: #EAE6E7;
+        border-radius: 10px;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .announce {
+            padding: 20px 0;
+            border-bottom: 2px solid black;
+        }
+    }
+
+    .trending {
+        margin-top: 20px;
+        background-color: #EAE6E7;
+        padding: 30px;
+        border-radius: 10px;
+        display: grid;
+        gap: 20px;
+        font-size: 1rem;
+
+        .influencer {
+            display: flex;
+            gap: 30px;
+        }
+        
+    }
 
 }

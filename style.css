@@ -53,12 +53,15 @@ ul, li {
 }
 
 main {
-  background-color: #EAE6E7;
+  background-color: #6497b1;
   padding: 20px;
   grid-area: main;
   display: grid;
-  grid-template-columns: 1fr 250px;
+  grid-template-columns: 1fr 300px;
   gap: 40px;
+}
+main h1 {
+  color: #EAE6E7;
 }
 
 main .projects {
@@ -71,6 +74,7 @@ main .projects article {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 main .projects article .card {
+  background-color: #EAE6E7;
   height: 200px;
   padding: 30px;
   border: 1px solid black;
@@ -87,4 +91,37 @@ main .projects article .card .icons {
 }
 main .projects article .card .icons i {
   margin-left: 10px;
+}
+
+main .lateral {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 40px;
+  font-size: 0.8rem;
+}
+main .lateral .announcements {
+  margin-top: 20px;
+  background-color: #EAE6E7;
+  border-radius: 10px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main .lateral .announcements .announce {
+  padding: 20px 0;
+  border-bottom: 2px solid black;
+}
+main .lateral .trending {
+  margin-top: 20px;
+  background-color: #EAE6E7;
+  padding: 30px;
+  border-radius: 10px;
+  display: grid;
+  gap: 20px;
+  font-size: 1rem;
+}
+main .lateral .trending .influencer {
+  display: flex;
+  gap: 30px;
 }/*# sourceMappingURL=style.css.map */
