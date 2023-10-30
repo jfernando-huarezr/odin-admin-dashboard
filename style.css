@@ -6,6 +6,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
 }
 
 ul, li {
@@ -17,7 +18,6 @@ ul, li {
   grid-template-columns: 300px 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas: "sidebar header" "sidebar main";
-  min-height: 100vh;
 }
 
 .header {
@@ -56,6 +56,7 @@ ul, li {
   grid-area: navbar;
   justify-self: end;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
 }
@@ -73,6 +74,7 @@ ul, li {
   justify-self: end;
   grid-area: buttons;
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 .header .action-buttons button {
@@ -163,6 +165,7 @@ main .lateral {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   gap: 40px;
+  padding: 5px;
   font-size: 0.8rem;
 }
 main .lateral .announcements {

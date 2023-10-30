@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
 }
 
 ul, li {
@@ -20,8 +21,6 @@ ul, li {
     grid-template-areas: 
         "sidebar header"
         "sidebar main";
-
-    min-height: 100vh;
 }
 
 .header {
@@ -71,6 +70,7 @@ ul, li {
         grid-area: navbar;
         justify-self: end;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         gap: 30px;
 
@@ -93,6 +93,7 @@ ul, li {
         grid-area: buttons;
 
         display: flex;
+        flex-wrap: wrap;
         gap: 40px;
 
         button {
@@ -206,6 +207,7 @@ main .lateral {
     grid-template-rows: auto 1fr;
     gap: 40px;
     
+    padding: 5px;
     font-size: 0.8rem;
 
     .announcements {
