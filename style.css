@@ -25,14 +25,70 @@ ul, li {
   padding: 20px;
   grid-area: header;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "search navbar" "user buttons";
+  align-items: center;
+}
+.header .search {
+  grid-area: search;
+}
+.header .search input {
+  width: 80%;
+  border-radius: 20px;
+  outline-style: none;
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+.header .user {
+  grid-area: user;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.header .user img {
+  height: 60px;
+}
+.header .user .user-info h4 {
+  font-size: 1.4rem;
+}
+.header .navbar {
+  grid-area: navbar;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header .navbar img {
+  height: 40px;
+}
+.header .navbar .alerts {
+  font-size: 1.5rem;
+}
+.header .navbar .profile-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.header .action-buttons {
+  justify-self: end;
+  grid-area: buttons;
+  display: flex;
+  gap: 40px;
+}
+.header .action-buttons button {
+  width: 120px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: skyblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .sidebar {
-  padding: 50px;
+  padding: 30px;
   background-color: #5B8CBC;
   grid-area: sidebar;
+  font-weight: bold;
   color: #EAE6E7;
   font-size: 1.3rem;
 }
@@ -50,6 +106,15 @@ ul, li {
 .sidebar > div ul li {
   display: flex;
   gap: 10px;
+}
+.sidebar > div ul li .logo img {
+  height: 50px;
+}
+.sidebar > div ul li .logo-name {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
 }
 
 main {
@@ -107,6 +172,7 @@ main .lateral .announcements {
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr;
+  box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.26);
 }
 main .lateral .announcements .announce {
   padding: 20px 0;
@@ -120,8 +186,22 @@ main .lateral .trending {
   display: grid;
   gap: 20px;
   font-size: 1rem;
+  box-shadow: -10px 10px 5px 0px rgba(0, 0, 0, 0.26);
 }
 main .lateral .trending .influencer {
   display: flex;
   gap: 30px;
+}
+main .lateral .trending .influencer .icon {
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}
+main .lateral .trending .influencer .icon img {
+  width: 100%;
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */
